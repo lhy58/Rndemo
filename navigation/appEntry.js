@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import Tabs from './tab'
 import My from '../src/my'
 import AnimateTabs from '../src/animateTabs'
+import AnimateSide from '../src/animateSide'
 
 const Stact = createStackNavigator()
 
@@ -26,6 +27,7 @@ const AppEntry = () => {
         />
         <Stact.Screen name='My' component={My} />
         <Stact.Screen name='AnimateTabs' component={AnimateTabs} />
+        <Stact.Screen name='AnimateSide' component={AnimateSide} />
       </Stact.Navigator>
     </NavigationContainer>
   )

@@ -9,9 +9,14 @@ const groups = [
     link: 'My',
   },
   {
-    id: '01',
+    id: '02',
     name: 'tabs',
     link: 'AnimateTabs',
+  },
+  {
+    id: '03',
+    name: '侧滑',
+    link: 'AnimateSide',
   },
 ]
 

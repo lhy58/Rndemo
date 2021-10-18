@@ -200,11 +200,53 @@ const AnimateTabs = () => {
     )
   }
 
+  function renderScrollView() {
+    return (
+      <Animated.ScrollView
+        ref={menuScrollRef}
+        horizontal
+        pagingEnabledm
+        scrollEventThrottle={16}
+        snapToAlignment='center'
+        showsHorizontalScrollIndicator={false}
+        onScroll={Animated.event([
+          { nativeEvent: { contentOffset: { x: scrollX } } }
+        ], { useNativeDriver: false })}
+      >
+        {
+          menu.map((item, index) => (
+            <View
+              key={item.menuId}
+              style={{
+                flex: 1,
+                alignItems: 'center',
+                width: SIZES.width,
+                paddingVertical: SIZES.padding
+              }}
+            >
+              <Image
+                source={item.photo}
+                resizeMode="cover"
+                style={{
+                  width: SIZES.width,
+                  height: "100%",
+                  height: SIZES.height * 0.35
+                }}
+              />
+              <Text style={{ color: COLORS.primary, ...FONTS.h1, fontSize: 27 }}>{item.name}</Text>
+            </View>
+          ))
+        }
+      </Animated.ScrollView>
+    )
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={{ flex: 1, alignItems: 'center' }}>
         {renderTabs()}
         {rederFlatlist()}
+        {/* {renderScrollView()} */}
       </View>
 
     </SafeAreaView>
