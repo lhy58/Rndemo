@@ -6,6 +6,8 @@ import Tabs from './tab'
 import My from '../src/my'
 import AnimateTabs from '../src/animateTabs'
 import AnimateSide from '../src/animateSide'
+import AnimateCard from '../src/animateCard'
+import AnimateCard1 from '../src/animateCard1'
 
 const Stact = createStackNavigator()
 
@@ -14,7 +16,7 @@ const AppEntry = () => {
     <NavigationContainer>
       <Stact.Navigator
         screenOptions={{
-          // headerShown: false
+          headerShown: false
         }}
         initialRouteName={'Home'}
       >
@@ -28,6 +30,8 @@ const AppEntry = () => {
         <Stact.Screen name='My' component={My} />
         <Stact.Screen name='AnimateTabs' component={AnimateTabs} />
         <Stact.Screen name='AnimateSide' component={AnimateSide} />
+        <Stact.Screen name='AnimateCard' component={AnimateCard} />
+        <Stact.Screen name='AnimateCard1' component={AnimateCard1} />
       </Stact.Navigator>
     </NavigationContainer>
   )

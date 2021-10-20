@@ -18,6 +18,16 @@ const groups = [
     name: '侧滑',
     link: 'AnimateSide',
   },
+  {
+    id: '04',
+    name: '卡片动画',
+    link: 'AnimateCard',
+  },
+  {
+    id: '05',
+    name: '卡片动画1',
+    link: 'AnimateCard1',
+  },
 ]
 
 const Home = ({ navigation }) => {

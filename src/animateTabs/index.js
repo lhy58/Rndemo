@@ -167,6 +167,8 @@ const AnimateTabs = () => {
         horizontal
         pagingEnabledm
         scrollEventThrottle={16}
+        snapToInterval={SIZES.width}
+        // decelerationRate={0}
         snapToAlignment='center'
         showsHorizontalScrollIndicator={false}
         keyExtractor={item => `${item.menuId}`}
