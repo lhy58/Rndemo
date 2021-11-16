@@ -28,6 +28,16 @@ const groups = [
     name: '卡片动画1',
     link: 'AnimateCard1',
   },
+  // {
+  //   id: '06',
+  //   name: '侧滑删除',
+  //   link: 'AnimateSwipe',
+  // },
+  {
+    id: '06',
+    name: '侧滑删除1',
+    link: 'AnimateSwipe1',
+  },
 ]
 
 const Home = ({ navigation }) => {
