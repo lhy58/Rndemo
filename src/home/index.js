@@ -38,6 +38,11 @@ const groups = [
     name: '侧滑删除1',
     link: 'AnimateSwipe1',
   },
+  {
+    id: '08',
+    name: '吸顶动画',
+    link: 'AnimateSticky',
+  },
 ]
 
 const Home = ({ navigation }) => {
