@@ -75,7 +75,7 @@ const renderItem = ({ item, index }) => {
   )
 }
 
-const AnimateSwipe = () => {
+const AnimateSwipe1 = () => {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
@@ -87,7 +87,7 @@ const AnimateSwipe = () => {
   )
 }
 
-export default AnimateSwipe
+export default AnimateSwipe1
 
 const styles = StyleSheet.create({
   container: {

@@ -43,6 +43,11 @@ const groups = [
     name: '吸顶动画',
     link: 'AnimateSticky',
   },
+  {
+    id: '09',
+    name: '轮播+bottomSheet',
+    link: 'AnimateSheet',
+  },
 ]
 
 const Home = ({ navigation }) => {

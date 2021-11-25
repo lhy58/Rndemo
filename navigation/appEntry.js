@@ -11,6 +11,7 @@ import AnimateCard1 from '../src/animateCard1'
 // import AnimateSwipe from '../src/animateSwipe'
 import AnimateSwipe1 from '../src/animateSwipe1'
 import AnimateSticky from '../src/animateSticky'
+import AnimateSheet from '../src/animateSheet'
 
 const Stact = createStackNavigator()
 
@@ -38,6 +39,7 @@ const AppEntry = () => {
         {/* <Stact.Screen name='AnimateSwipe' component={AnimateSwipe} /> */}
         <Stact.Screen name='AnimateSwipe1' component={AnimateSwipe1} />
         <Stact.Screen name='AnimateSticky' component={AnimateSticky} />
+        <Stact.Screen name='AnimateSheet' component={AnimateSheet} />
       </Stact.Navigator>
     </NavigationContainer>
   )
