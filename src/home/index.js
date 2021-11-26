@@ -48,6 +48,11 @@ const groups = [
     name: '轮播+bottomSheet',
     link: 'AnimateSheet',
   },
+  {
+    id: '10',
+    name: '堆 + 轮播',
+    link: 'AnimateStack',
+  },
 ]
 
 const Home = ({ navigation }) => {
