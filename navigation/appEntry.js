@@ -1,7 +1,8 @@
 import React from 'react'
 
-import { createStackNavigator } from '@react-navigation/stack'
+// import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from '@react-navigation/native'
+import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
 import Tabs from './tab'
 import My from '../src/my'
 import AnimateTabs from '../src/animateTabs'
@@ -13,8 +14,11 @@ import AnimateSwipe1 from '../src/animateSwipe1'
 import AnimateSticky from '../src/animateSticky'
 import AnimateSheet from '../src/animateSheet'
 import AnimateStack from '../src/animateStack'
+import animateSharedDetail from '../src/animateSharedDetail'
+import AnimateShared from '../src/animateShared'
 
-const Stact = createStackNavigator()
+// const Stact = createStackNavigator()
+const Stact = createSharedElementStackNavigator()
 
 const AppEntry = () => {
   return (
@@ -42,6 +46,8 @@ const AppEntry = () => {
         <Stact.Screen name='AnimateSticky' component={AnimateSticky} />
         <Stact.Screen name='AnimateSheet' component={AnimateSheet} />
         <Stact.Screen name='AnimateStack' component={AnimateStack} />
+        <Stact.Screen name='animateSharedDetail' component={animateSharedDetail} />
+        <Stact.Screen name='AnimateShared' component={AnimateShared} />
       </Stact.Navigator>
     </NavigationContainer>
   )

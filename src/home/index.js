@@ -53,6 +53,11 @@ const groups = [
     name: '堆 + 轮播',
     link: 'AnimateStack',
   },
+  {
+    id: '11',
+    name: '堆轮播+放大查看',
+    link: 'AnimateShared',
+  },
 ]
 
 const Home = ({ navigation }) => {
