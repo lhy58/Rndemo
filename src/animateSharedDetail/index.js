@@ -43,7 +43,12 @@ const AnimateSharedDetail = ({ navigation, route }) => {
         />
       </SharedElement>
       {/* 遮罩层 */}
-      <View style={[StyleSheet.absoluteFillObject, { backgroundColor: '#000', opacity: 0.3 }]} />
+      <Animatable.View
+        duration={400}
+        delay={DELAY}
+        animation='fadeIn'
+        style={[StyleSheet.absoluteFillObject, { backgroundColor: 'rgba(0,0,0,.3)' }]}
+      />
       <TouchableOpacity
         style={{ padding: 12 }}
         onPress={() => {
